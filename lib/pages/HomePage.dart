@@ -77,7 +77,6 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   height: 100,
                   child: ListView(
-
                     scrollDirection: Axis.horizontal,
                     children: [
                       Padding(padding: EdgeInsets.all(5)),
