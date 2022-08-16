@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
+import 'package:cashe_uz/pages/registration_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -61,7 +62,12 @@ class HomePage extends StatelessWidget {
             // ignore: deprecated_member_use
             FlatButton(
               height: 57.58,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => RegistrationPage()));
+              },
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(32.28)),
               hoverColor: Color(0xFFFF7900),
